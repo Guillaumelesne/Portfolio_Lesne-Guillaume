@@ -210,7 +210,7 @@ body {
 }
 
 /* Message d'info sur les polices */
-.info-message {
+.info-footer {
   margin-top: 2rem;
   font-size: 0.85rem;
   color: #5a5a5a;
@@ -219,6 +219,9 @@ body {
   background: #efebe6;
   padding: 1rem;
   border-radius: 1rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 1300px;
 }
 
 /* Petit indicateur visuel pour la zone #moi (à supprimer plus tard) */
