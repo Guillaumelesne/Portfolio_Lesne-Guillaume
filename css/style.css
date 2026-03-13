@@ -127,7 +127,7 @@ body {
 
 .about-title {
   font-family: 'Designer', 'Designer-Book', 'Trebuchet MS', 'Lucida Sans', sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 400;
   color: #742f3d;
   position: absolute;
@@ -183,7 +183,7 @@ body {
 
 .contact-title {
   font-family: 'Designer', 'Designer-Book', 'Trebuchet MS', 'Lucida Sans', sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 400;
   color: #742f3d;
   position: absolute;
@@ -211,7 +211,7 @@ body {
 
 .form-group label {
   font-family: 'Designer', 'Designer-Book', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: #742f3d;
   letter-spacing: 0.02em;
 }
@@ -325,10 +325,25 @@ MENU QUI DESCEND DU HAUT
 
 @media (max-width:900px){
 
+.header-wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  position: static;
+  top: 1rem;
+  z-index: 1000;
+}
+
 .site-header{
 flex-wrap:nowrap;
 }
+.name-top {
+  font-size: 1.8rem;  /* était à 2.5rem */
+}
 
+.name-bottom {
+  font-size: 1.2rem;  /* était à 1.6rem */
+}
 /* NAV devient menu fullscreen qui descend */
 
 .header-nav{
