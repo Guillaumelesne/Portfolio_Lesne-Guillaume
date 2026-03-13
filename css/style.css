@@ -278,7 +278,7 @@ body {
 
 @font-face {
   font-family: 'Designer';
-  src: url('typo/Designer-Book.otf') format('opentype');
+  src: url('typo/Designer-Book.ttf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
