@@ -7,7 +7,7 @@
     <title>Portfolio Guillaume Lesne</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
+</script>
 <body>
 <div class="header-wrapper">
         <header class="site-header">
@@ -84,5 +84,18 @@
             <p>Portfolio réalisé par Lesne Guillaume étudiant en bachelier technique graphique a la heh.™</p>
         </div>
     </footer>
+	<script>
+		const burger = document.getElementById("burger-toggle");
+
+		document.querySelectorAll(".nav-item").forEach(link => {
+		link.addEventListener("click", () => {
+		burger.checked = false;
+		});
+		});
+
+		document.querySelector(".menu-overlay").addEventListener("click", () => {
+		burger.checked = false;
+		});
+</script>
 </body>
 </html>

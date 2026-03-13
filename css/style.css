@@ -323,13 +323,20 @@ MENU QUI DESCEND DU HAUT
 ======================*/
 
 @media (max-width:900px){
+	
+body:has(#burger-toggle:checked){
+overflow:hidden;
+}
+
+.header-nav{
+overflow:hidden;
+}
 
 .header-wrapper {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
   position: static;
-  top: 1rem;
   z-index: 1000;
 }
 
@@ -450,7 +457,7 @@ pointer-events:auto;
   font-size: 1.6rem;
 }
 
-contact-title {
+.contact-title {
   font-size: 1.6rem;
 }
 
