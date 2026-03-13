@@ -18,25 +18,56 @@
 
       <!-- zone navigation : TOUS LES LIENS À L'HORIZONTALE -->
       <nav class="header-nav">
-		<a href="#moi" class="nav-item">MOI</a>
-        <a href="#" class="nav-item">CONTACT</a>
+        <a href="#moi" class="nav-item">MOI</a>
+        <a href="#contact" class="nav-item">CONTACT</a>
         <a href="#" class="nav-item">PROJECT</a>
         <a href="#" class="nav-item">PORTFOLIO</a>
       </nav>
+    </header>	
+  </div>
+  
+  <main>
+    <section id="moi" class="about-section">
+      <h2 class="about-title">À PROPOS DE MOI</h2>
+      <div class="about-content">
+        <p>Je m'appelle Guillaume Lesne. À travers ce portfolio, je vous présente ce que j'aime faire et ce qui m'inspire. Mon univers graphique est influencé par les comics américains ainsi que par les films qui ont beaucoup nourri ma créativité.</p>
+        <p>J'accorde de l'importance à chacun de mes projets et j'essaie toujours de donner le meilleur de moi-même dans ce que je réalise. Curieux et passionné, j'aime apprendre de nouvelles choses et créer des projets de A à Z, en développant progressivement mon propre style.</p>
+      </div>
+    </section>
 
-    </header>
-
-    <!-- zone supplémentaire pour montrer qu'on peut ajouter du contenu simplement -->
-    <div id="moi">
-
+    <!-- SECTION CONTACT -->
+    <section id="contact" class="contact-section">
+      <h2 class="contact-title">CONTACT</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="nom">NOM</label>
+          <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="sujet">SUJET</label>
+          <input type="text" id="sujet" name="sujet" placeholder="Sujet de votre message" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">MESSAGE</label>
+          <textarea id="message" name="message" rows="6" placeholder="Votre message..." required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Envoyer</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="info-footer">
+      <p>Portfolio réalisé par Lesne Guillaume étudiant en bachelier technique graphique a la heh.™</p>
     </div>
-
-  <!-- petit message d'info sur les polices (visible si les fichiers locaux ne sont pas trouvés) -->
-	<footer>
-	  <div class="info-footer">
-		<p>Portfolio réalisé par Lesne Guillaume étudiant en 
-		bachelier technique graphique a la heh.</p>
-	  </div>
-	</footer>
+  </footer>
 </body>
 </html>
