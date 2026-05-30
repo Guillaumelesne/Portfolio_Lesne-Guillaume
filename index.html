@@ -7,11 +7,10 @@
     <title>Portfolio Guillaume Lesne</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-</script>
-<body>
-<div class="header-wrapper">
-        <header class="site-header">
 
+<body>
+    <div class="header-wrapper">
+        <header class="site-header">
             <div class="header-name">
                 <span class="name-top">LESNE GUILLAUME</span>
                 <span class="name-bottom">INFOGRAPHISTE</span>
@@ -19,7 +18,6 @@
 
             <!-- BURGER -->
             <input type="checkbox" id="burger-toggle">
-
             <label for="burger-toggle" class="burger-label">
                 <span></span>
                 <span></span>
@@ -30,14 +28,14 @@
 
             <nav class="header-nav">
                 <a href="#moi" class="nav-item">MOI</a>
+                <a href="#skills" class="nav-item">COMPÉTENCES</a>
                 <a href="#contact" class="nav-item">CONTACT</a>
-                <a href="#" class="nav-item">PROJECT</a>
                 <a href="#" class="nav-item">PORTFOLIO</a>
             </nav>
-
         </header>
     </div>
-	<main>
+
+    <main>
         <section id="moi" class="about-section">
             <h2 class="about-title">À PROPOS DE MOI</h2>
             <div class="about-content">
@@ -49,53 +47,91 @@
                     des projets de A à Z, en développant progressivement mon propre style.</p>
             </div>
         </section>
-
+        <section id="skills" class="skills-section">
+            <h2 class="skills-title">COMPÉTENCES</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="img/galerie_logo/illustrator.webp" alt="Illustrator">
+                    <p>Illustrator</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/galerie_logo/photoshop.webp" alt="Photoshop">
+                    <p>Photoshop</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/galerie_logo/indesign.webp" alt="InDesign">
+                    <p>InDesign</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/galerie_logo/aftereffect.webp" alt="After Effects">
+                    <p>After Effects</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/galerie_logo/premierepro.webp" alt="Premiere Pro">
+                    <p>Premiere Pro</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/galerie_logo/figma.webp" alt="Figma">
+                    <p>Figma</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/galerie_logo/autocad.webp" alt="autocad">
+                    <p>autocad</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/galerie_logo/maya.webp" alt="maya">
+                    <p>maya</p>
+                </div>
+                 <div class="skill-card">
+                    <img src="img/galerie_logo/solidworks.webp" alt="solidworks">
+                    <p>solidworks</p>
+                </div>
+                <!-- Ajoute autant de cartes que nécessaire -->
+            </div>
+        </section>
         <section id="contact" class="contact-section">
             <h2 class="contact-title">CONTACT</h2>
             <form class="contact-form">
-
                 <div class="form-group">
                     <label for="nom">NOM</label>
                     <input type="text" id="nom" required>
                 </div>
-
                 <div class="form-group">
                     <label for="email">EMAIL</label>
                     <input type="email" id="email" required>
                 </div>
-
                 <div class="form-group">
                     <label for="sujet">SUJET</label>
                     <input type="text" id="sujet" required>
                 </div>
-
                 <div class="form-group">
                     <label for="message">MESSAGE</label>
                     <textarea id="message" rows="6" required></textarea>
                 </div>
-
                 <button type="submit" class="submit-btn">ENVOYER</button>
-
             </form>
         </section>
     </main>
-	<footer>
+
+    <footer>
         <div class="info-footer">
             <p>Portfolio réalisé par Lesne Guillaume étudiant en bachelier technique graphique a la heh.™</p>
         </div>
     </footer>
-	<script>
-		const burger = document.getElementById("burger-toggle");
 
-		document.querySelectorAll(".nav-item").forEach(link => {
-		link.addEventListener("click", () => {
-		burger.checked = false;
-		});
-		});
+    <script>
+        const burger = document.getElementById("burger-toggle");
 
-		document.querySelector(".menu-overlay").addEventListener("click", () => {
-		burger.checked = false;
-		});
-</script>
+        document.querySelectorAll(".nav-item").forEach(link => {
+            link.addEventListener("click", () => {
+                burger.checked = false;
+            });
+        });
+
+        document.querySelector(".menu-overlay").addEventListener("click", () => {
+            burger.checked = false;
+        });
+    </script>
 </body>
+
 </html>

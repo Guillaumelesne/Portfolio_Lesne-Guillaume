@@ -1,8 +1,4 @@
-/* ===== css/style.css ===== */
-/* RESET & BASE */
-
-
-
+/* ===== RESET & BASE ===== */
 * {
   margin: 0;
   padding: 0;
@@ -27,18 +23,16 @@ body {
   padding: 2rem 1rem;
 }
 
-/* conteneur pour centrer le header avec une largeur confortable */
+/* HEADER */
 .header-wrapper {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  /* STICKY HEADER - version CSS pure */
   position: sticky;
   top: 1rem;
   z-index: 1000;
 }
 
-/* ========== HEADER PRINCIPAL ========== */
 .site-header {
   display: flex;
   flex-wrap: wrap;
@@ -52,7 +46,6 @@ body {
   border: 1px solid rgba(0,0,0,0.02);
 }
 
-/* partie gauche : "LESNE GUILLAUME" avec les deux typographies */
 .header-name {
   display: flex;
   flex-direction: column;
@@ -60,9 +53,8 @@ body {
 }
 
 .name-top {
-  font-family: 'Fonseca Grande', 'Fonseca Grande - Free Version', 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  font-family: 'Fonseca Grande', 'Impact', sans-serif;
   font-size: 2.5rem;
-  font-weight: normal;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #121212;
@@ -70,21 +62,18 @@ body {
 }
 
 .name-bottom {
-  font-family: 'Designer', 'Designer-Book', 'Trebuchet MS', 'Lucida Sans', sans-serif;
+  font-family: 'Designer', 'Trebuchet MS', sans-serif;
   font-size: 1.6rem;
-  font-weight: 400;
   letter-spacing: 0.03em;
   color: #3a3a3a;
   margin-top: -0.15rem;
 }
 
-/* ===== NAVIGATION RESPONSIVE AMÉLIORÉE ===== */
 .header-nav {
   display: flex;
   flex-direction: row;
   gap: 2rem;
   margin: 0 1rem;
-  font-family: 'Source Sans Variable', 'Source Sans 3', 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 1.3rem;
   letter-spacing: 0.02rem;
@@ -102,13 +91,134 @@ body {
   white-space: nowrap;
 }
 
-/* COULEUR DE SURVOL - BORDEAUX #742f3d */
 .nav-item:hover {
   color: #742f3d;
   border-bottom-color: #742f3d;
 }
+/* SKILLS SECTION */
+.skills-section {
+    margin-top: 4rem;
+    padding: 2.5rem 2rem 2rem 2rem;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 1rem;
+    border: 1px dashed #742f3d;
+    width: 100%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
 
-/* ===== SECTION À PROPOS ===== */
+.skills-title {
+    font-family: 'Designer', 'Trebuchet MS', sans-serif;
+    font-size: 2.1rem;
+    color: #742f3d;
+    position: absolute;
+    top: -1.2rem;
+    right: 2rem;
+    background-color: #f3f1ea;
+    padding: 0 1rem;
+    z-index: 5;
+    font-weight: 200;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 2rem 1.5rem;
+    justify-items: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.skill-card {
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 140px;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+}
+
+.skill-card img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    background: white;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+    transition: all 0.2s;
+}
+
+.skill-card img:hover {
+    box-shadow: 0 12px 20px rgba(116, 47, 61, 0.15);
+}
+
+.skill-card p {
+    margin-top: 0.75rem;
+    font-family: 'Source Sans Variable', sans-serif;
+    font-weight: 500;
+    color: #2c2c2c;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+}
+
+/* RESPONSIVE SKILLS */
+@media (max-width: 900px) {
+    .skills-title {
+        font-size: 1.6rem;
+        right: 1.5rem;
+    }
+    .skills-section {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+    .skills-grid {
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+    .skill-card img {
+        max-width: 80px;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-title {
+        font-size: 1.3rem;
+        right: 1rem;
+        top: -1rem;
+    }
+    .skills-section {
+        padding: 1.8rem 1rem 1.2rem;
+    }
+    .skills-grid {
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    .skill-card p {
+        font-size: 0.85rem;
+    }
+    .skill-card img {
+        max-width: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-title {
+        font-size: 1.1rem;
+        padding: 0 0.6rem;
+        right: 0.8rem;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* ABOUT SECTION */
 #moi {
   margin-top: 3rem;
   padding: 2.5rem 2rem 2rem 2rem;
@@ -116,34 +226,31 @@ body {
   border-radius: 1rem;
   border: 1px dashed #742f3d;
   color: #1e1e1e;
-  font-family: 'Source Sans Variable', 'Source Sans 3', sans-serif;
-  font-size: 1.1rem;
-  position: relative;
   width: 100%;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .about-title {
-  font-family: 'Designer', 'Designer-Book', 'Trebuchet MS', 'Lucida Sans', sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
+  font-family: 'Designer', 'Trebuchet MS', sans-serif;
+  font-size: 2.1rem;
   color: #742f3d;
   position: absolute;
   top: -1.2rem;
   right: 2rem;
   background-color: #f3f1ea;
   padding: 0 1rem;
-  margin: 0;
-  letter-spacing: 0.03em;
   z-index: 5;
+  font-weight: 200;
 }
 
 .about-content {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .about-content p {
@@ -151,49 +258,31 @@ body {
   font-weight: 300;
 }
 
-/* Message d'info sur les polices */
-.info-footer {
-  margin-top: 2rem;
-  font-size: 0.85rem;
-  color: #5a5a5a;
-  max-width: 800px;
-  text-align: center;
-  background: #efebe6;
-  padding: 1rem;
-  border-radius: 1rem;
-  width: 100%;
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ===== SECTION CONTACT ===== */
+/* CONTACT SECTION */
 .contact-section {
   margin-top: 4rem;
   padding: 2.5rem 2rem 2rem 2rem;
   background-color: rgba(255,255,255,0.3);
   border-radius: 1rem;
   border: 1px dashed #742f3d;
-  position: relative;
   width: 100%;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .contact-title {
-  font-family: 'Designer', 'Designer-Book', 'Trebuchet MS', 'Lucida Sans', sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
+  font-family: 'Designer', 'Trebuchet MS', sans-serif;
+  font-size: 2.1rem;
   color: #742f3d;
   position: absolute;
   top: -1.2rem;
   right: 2rem;
   background-color: #f3f1ea;
   padding: 0 1rem;
-  margin: 0;
-  letter-spacing: 0.03em;
   z-index: 5;
+  font-weight: 200;
 }
 
 .contact-form {
@@ -210,7 +299,7 @@ body {
 }
 
 .form-group label {
-  font-family: 'Designer', 'Designer-Book', sans-serif;
+  font-family: 'Designer', 'Trebuchet MS', sans-serif;
   font-size: 1.5rem;
   color: #742f3d;
   letter-spacing: 0.02em;
@@ -222,7 +311,6 @@ body {
   background-color: #ffffff;
   border: 1px solid rgba(116, 47, 61, 0.2);
   border-radius: 0.8rem;
-  font-family: 'Source Sans Variable', 'Source Sans 3', sans-serif;
   font-size: 1rem;
   color: #1e1e1e;
   transition: all 0.2s ease;
@@ -248,7 +336,7 @@ body {
   border: none;
   padding: 1rem 2rem;
   border-radius: 2rem;
-  font-family: 'Designer', 'Designer-Book', sans-serif;
+  font-family: 'Designer', 'Trebuchet MS', sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.05em;
   cursor: pointer;
@@ -268,6 +356,23 @@ body {
   transform: translateY(0);
 }
 
+/* FOOTER */
+.info-footer {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #5a5a5a;
+  max-width: 800px;
+  text-align: center;
+  background: #efebe6;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FONTS */
 @font-face {
   font-family: 'Fonseca Grande';
   src: url('typo/Fonseca Grande.ttf') format('opentype');
@@ -292,178 +397,85 @@ body {
   font-display: swap;
 }
 
-/* fallback Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;1,300&display=swap');
 
-body, .header-nav, .nav-item, .about-content, .contact-form {
-  font-family: 'Source Sans Variable', 'Source Sans 3', 'Source Sans Pro', 'Helvetica Neue', sans-serif;
-  font-weight: 300;
-}
-
-/* ======================
-BURGER BASE
-======================*/
-
-#burger-toggle{
-display:none;
-}
-
-.burger-label{
-display:none;
-}
-
-.menu-overlay{
-display:none;
-}
-
-
-/* ======================
-RESPONSIVE TABLET + MOBILE
-MENU QUI DESCEND DU HAUT
-======================*/
+/* BURGER & RESPONSIVE */
+#burger-toggle { display: none; }
+.burger-label { display: none; }
+.menu-overlay { display: none; }
 
 @media (max-width:900px){
-	
-body:has(#burger-toggle:checked){
-overflow:hidden;
-}
+  body:has(#burger-toggle:checked){ overflow:hidden; }
 
-.header-nav{
-overflow:hidden;
-}
+  .header-wrapper { position: static; }
 
-.header-wrapper {
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  position: static;
-  z-index: 1000;
-}
+  .site-header{ flex-wrap: nowrap; }
 
-.site-header{
-flex-wrap:nowrap;
-}
-.name-top {
-  font-size: 1.8rem;  /* était à 2.5rem */
-}
+  .name-top { font-size: 1.8rem; }
+  .name-bottom { font-size: 1.2rem; }
 
-.name-bottom {
-  font-size: 1.2rem;  /* était à 1.6rem */
-}
-/* NAV devient menu fullscreen qui descend */
+  .header-nav{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    transition: 0.45s;
+    z-index: 1005;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+  }
 
-.header-nav{
+  .nav-item{ font-size: 1.6rem; text-align:center; }
 
-position:fixed;
+  .burger-label{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    z-index:1010;
+  }
 
-top:-100%;
-left:0;
+  .burger-label span{
+    height: 3px;
+    width: 100%;
+    background: #742f3d;
+    border-radius: 10px;
+    transition: .3s;
+  }
 
-width:100%;
-height:100vh;
+  #burger-toggle:checked ~ .header-nav{ top: 0; }
 
-background:white;
+  #burger-toggle:checked + .burger-label span:nth-child(1){ transform: rotate(45deg) translate(6px,6px); }
+  #burger-toggle:checked + .burger-label span:nth-child(2){ opacity: 0; }
+  #burger-toggle:checked + .burger-label span:nth-child(3){ transform: rotate(-45deg) translate(6px,-6px); }
 
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+  .menu-overlay{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+    z-index: 1000;
+  }
 
-gap:2.5rem;
+  #burger-toggle:checked ~ .menu-overlay{
+    opacity: 1;
+    pointer-events: auto;
+  }
 
-transition:.45s;
-z-index:1005;
-
-box-shadow:0 20px 40px rgba(0,0,0,0.15);
-}
-
-/* items centrés */
-
-.nav-item{
-font-size:1.6rem;
-text-align:center;
-}
-
-/* bouton burger */
-
-.burger-label{
-
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-
-width:30px;
-height:22px;
-
-cursor:pointer;
-z-index:1010;
-}
-
-.burger-label span{
-
-height:3px;
-width:100%;
-background:#742f3d;
-border-radius:10px;
-transition:.3s;
-}
-
-/* ouverture menu */
-
-#burger-toggle:checked ~ .header-nav{
-top:0;
-}
-
-/* animation croix */
-
-#burger-toggle:checked + .burger-label span:nth-child(1){
-transform:rotate(45deg) translate(6px,6px);
-}
-
-#burger-toggle:checked + .burger-label span:nth-child(2){
-opacity:0;
-}
-
-#burger-toggle:checked + .burger-label span:nth-child(3){
-transform:rotate(-45deg) translate(6px,-6px);
-}
-
-/* overlay */
-
-.menu-overlay{
-
-display:block;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-
-background:rgba(0,0,0,.4);
-
-opacity:0;
-pointer-events:none;
-
-transition:.3s;
-z-index:1000;
-}
-
-#burger-toggle:checked ~ .menu-overlay{
-opacity:1;
-pointer-events:auto;
-}
-
-.about-title {
-  font-size: 1.6rem;
-}
-
-.contact-title {
-  font-size: 1.6rem;
-}
-
-.form-group label {
-  font-size: 1.2rem;
- 
-}
-
+  .about-title, .contact-title { font-size: 1.6rem; }
+  .form-group label { font-size: 1.2rem; }
 }
