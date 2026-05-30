@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Guillaume Lesne</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -36,17 +38,62 @@
     </div>
 
     <main>
+        <!-- SECTION À PROPOS -->
         <section id="moi" class="about-section">
             <h2 class="about-title">À PROPOS DE MOI</h2>
-            <div class="about-content">
-                <p>Je m'appelle Guillaume Lesne. À travers ce portfolio, je vous présente ce que j'aime faire et ce qui
-                    m'inspire. Mon univers graphique est influencé par les comics américains ainsi que par les films qui
-                    ont beaucoup nourri ma créativité.</p>
-                <p>J'accorde de l'importance à chacun de mes projets et j'essaie toujours de donner le meilleur de
-                    moi-même dans ce que je réalise. Curieux et passionné, j'aime apprendre de nouvelles choses et créer
-                    des projets de A à Z, en développant progressivement mon propre style.</p>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-intro"><strong>Guillaume Lesne</strong></p>
+                    <div class="about-quote">
+                        « Le succès est la somme de petits efforts, répétés jour après jour. »
+                        <span>— Robert Collier.</span>
+                    </div>
+                    <div class="about-bio">
+                        <p>Je m'appelle Guillaume Lesne. À travers ce portfolio, je vous présente ce que j'aime faire et ce qui
+                            m'inspire. Mon univers graphique est influencé par les comics américains ainsi que par les films qui
+                            ont beaucoup nourri ma créativité.</p>
+                        <p>J'accorde de l'importance à chacun de mes projets et j'essaie toujours de donner le meilleur de
+                            moi-même dans ce que je réalise. Curieux et passionné, j'aime apprendre de nouvelles choses et créer
+                            des projets de A à Z, en développant progressivement mon propre style.</p>
+                    </div>
+                </div>
+                <!-- Colonne droite : barres de compétences -->
+                <div class="about-skills">
+                    <div class="skill-item">
+                        <span class="skill-name">Graphisme</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Dessin technique</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 65%;"></div></div>
+                        <span class="skill-percent">65%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Modèle et rendu 3D</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 55%;"></div></div>
+                        <span class="skill-percent">55%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Web design</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 60%;"></div></div>
+                        <span class="skill-percent">60%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Animation</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 45%;"></div></div>
+                        <span class="skill-percent">45%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Chose à encore apprendre</span>
+                        <div class="skill-bar"><div class="skill-level" style="width: 100%;"></div></div>
+                        <span class="skill-percent">100%</span>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <!-- SECTION COMPÉTENCES (logos) -->
         <section id="skills" class="skills-section">
             <h2 class="skills-title">COMPÉTENCES</h2>
             <div class="skills-grid">
@@ -76,19 +123,20 @@
                 </div>
                 <div class="skill-card">
                     <img src="img/galerie_logo/autocad.webp" alt="autocad">
-                    <p>autocad</p>
+                    <p>Autocad</p>
                 </div>
                 <div class="skill-card">
                     <img src="img/galerie_logo/maya.webp" alt="maya">
-                    <p>maya</p>
+                    <p>Maya</p>
                 </div>
-                 <div class="skill-card">
+                <div class="skill-card">
                     <img src="img/galerie_logo/solidworks.webp" alt="solidworks">
-                    <p>solidworks</p>
+                    <p>Solidworks</p>
                 </div>
-                <!-- Ajoute autant de cartes que nécessaire -->
             </div>
         </section>
+
+        <!-- SECTION CONTACT (avec bouton + icônes alignés) -->
         <section id="contact" class="contact-section">
             <h2 class="contact-title">CONTACT</h2>
             <form class="contact-form">
@@ -108,14 +156,29 @@
                     <label for="message">MESSAGE</label>
                     <textarea id="message" rows="6" required></textarea>
                 </div>
-                <button type="submit" class="submit-btn">ENVOYER</button>
+
+                <!-- Pied de formulaire : bouton + icônes alignés -->
+                <div class="form-footer">
+                    <button type="submit" class="submit-btn">ENVOYER</button>
+                    <div class="contact-social">
+                        <a href="https://discordapp.com/users/801201108553826414" target="_blank" class="social-circle" aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://www.instagram.com/guillaume.lsn59/" target="_blank" class="social-circle" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/ton-pseudo" target="_blank" class="social-circle" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
             </form>
         </section>
     </main>
-
+d
     <footer>
         <div class="info-footer">
-            <p>Portfolio réalisé par Lesne Guillaume étudiant en bachelier technique graphique a la heh.™</p>
+            <p>Portfolio réalisé par Lesne Guillaume étudiant en bachelier technique graphique à la HEH.™</p>
         </div>
     </footer>
 
