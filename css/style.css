@@ -1,11 +1,6 @@
-/* ================================================
-   0. IMPORT DES POLICES EXTERNES (doit être en premier)
-   ================================================ */
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;1,300&display=swap');
 
-/* ================================================
-   1. RESET & BASE
-   ================================================ */
 * {
     margin: 0;
     padding: 0;
@@ -30,9 +25,6 @@ body {
     padding: 2rem 1rem;
 }
 
-/* ================================================
-   2. HEADER & STICKY
-   ================================================ */
 .header-wrapper {
     width: 100%;
     max-width: 1300px;
@@ -105,9 +97,6 @@ body {
     border-bottom-color: #742f3d;
 }
 
-/* ================================================
-   3. STRUCTURE COMMUNE (sections avec pointillés)
-   ================================================ */
 #moi, .skills-section, .projects-section, .contact-section {
     width: 100%;
     max-width: 1300px;
@@ -136,9 +125,6 @@ body {
     z-index: 5;
 }
 
-/* ================================================
-   4. SECTION À PROPOS
-   ================================================ */
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -222,9 +208,6 @@ body {
     font-weight: 500;
 }
 
-/* ================================================
-   5. SECTION COMPÉTENCES LOGICIELLES
-   ================================================ */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -267,9 +250,6 @@ body {
     font-size: 1rem;
 }
 
-/* ================================================
-   6. SECTION PROJETS
-   ================================================ */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -316,9 +296,6 @@ body {
     line-height: 1.4;
 }
 
-/* ================================================
-   7. SECTION CONTACT
-   ================================================ */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -413,9 +390,6 @@ body {
     transform: scale(1.1);
 }
 
-/* ================================================
-   8. FOOTER
-   ================================================ */
 .info-footer {
     margin-top: 2rem;
     font-size: 0.85rem;
@@ -430,9 +404,6 @@ body {
     margin-right: auto;
 }
 
-/* ================================================
-   9. FONTS LOCALES
-   ================================================ */
 @font-face {
     font-family: 'Fonseca Grande';
     src: url('typo/Fonseca Grande.ttf') format('opentype');
@@ -453,9 +424,6 @@ body, .header-nav, .nav-item, .skill-card p, .project-info p, .form-group input,
     font-family: 'Source Sans Variable', 'Source Sans 3', 'Source Sans Pro', sans-serif;
 }
 
-/* ================================================
-   10. BURGER & RESPONSIVE (tous les media queries)
-   ================================================ */
 #burger-toggle { display: none; }
 .burger-label { display: none; }
 .menu-overlay { display: none; }
