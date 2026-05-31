@@ -444,13 +444,6 @@ body {
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Source Sans Variable';
-    src: url('../typo/SourceSansVariable-Roman.otf') format('opentype-variations');
-    font-weight: 200 900;
-    font-stretch: 75% 125%;
-    font-display: swap;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;1,300&display=swap');
 
