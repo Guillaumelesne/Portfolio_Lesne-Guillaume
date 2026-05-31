@@ -1,3 +1,7 @@
+/* ================================================
+   0. IMPORT DES POLICES EXTERNES (doit être en premier)
+   ================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;1,300&display=swap');
 
 /* ================================================
    1. RESET & BASE
@@ -427,7 +431,7 @@ body {
 }
 
 /* ================================================
-   9. FONTS
+   9. FONTS LOCALES
    ================================================ */
 @font-face {
     font-family: 'Fonseca Grande';
@@ -445,9 +449,6 @@ body {
     font-display: swap;
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;1,300&display=swap');
-
 body, .header-nav, .nav-item, .skill-card p, .project-info p, .form-group input, .form-group textarea {
     font-family: 'Source Sans Variable', 'Source Sans 3', 'Source Sans Pro', sans-serif;
 }
@@ -459,7 +460,6 @@ body, .header-nav, .nav-item, .skill-card p, .project-info p, .form-group input,
 .burger-label { display: none; }
 .menu-overlay { display: none; }
 
-/* Tablette et mobile */
 @media (max-width: 900px) {
     body:has(#burger-toggle:checked) { overflow: hidden; }
     .header-wrapper { position: static; }
